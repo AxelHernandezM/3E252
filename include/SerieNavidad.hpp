@@ -5,28 +5,27 @@ using namespace std;
 class SerieNavidad
 {
 private:
-    foco[10];
+    Foco focos[10];
 public:
     SerieNavidad(/* args */) {}
     ~SerieNavidad() {}
     void Encender(){
         for (int numFoco = 0; numFoco < 10; numFoco++)
         {
-            focos[numFoco].Encender()
-            /* code */
+            focos[numFoco].Encender();
         }
         
     }
-    oid Apagar(){
+    void Apagar(){
         for (int numFoco = 0; numFoco < 10; numFoco++)
         {
-            focos[numFoco].Apagar()
-            /* code */
-        }
+            focos[numFoco].Apagar();
+          
+        }}
         void ImprimirSerie(){
-            for (int numFoco = 0; numFoco < count; numFoco++)
+            for (int numFoco = 0; numFoco < 10; numFoco++)
             {
-               cout<<focos[numFoco].MostarEstado();
+               cout<< focos[numFoco].MostrarEstado();
             }
             
         }
